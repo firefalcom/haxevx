@@ -1,0 +1,14 @@
+{
+    "name": "haxevx",
+    "url" : "https://github.com/firefalcom/parse-utils",
+    "license": "MIT",
+    "tags": ["vuejs"],
+    "description": "Vuejs binding",
+    "version": "0.0.0",
+    "classPath": "src/",
+    "releasenote": "Initial release, everything is working correctly.",
+    "contributors": [""],
+    "dependencies": {
+    }
+
+  }
