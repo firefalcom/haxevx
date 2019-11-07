@@ -1,7 +1,7 @@
 package haxevx.vuex.core;
 import haxevx.vuex.native.CommitOptions;
 import haxevx.vuex.native.DispatchOptions;
-import js.Promise;
+import js.lib.Promise;
 
 /**
  *  Base generic class for Vuex Store instance helpers
