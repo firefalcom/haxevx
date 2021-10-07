@@ -17,13 +17,13 @@ class VxComponent<S:IVxContext, D, P> extends VComponent<D,P>
 	var store(get, null):S;
 	inline function get_store():S 
 	{
-		return untyped __js__("this.$store");
+		return js.Syntax.code("this.$store");
 	}
 	
 	var _vStore(get, null):Store<Dynamic>;
 	inline function get__vStore():Store<Dynamic>
 	{
-		return untyped __js__("this.$store");
+		return js.Syntax.code("this.$store");
 	}
 	
 }
