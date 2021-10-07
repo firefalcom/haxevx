@@ -2,7 +2,7 @@ package haxevx.vuex.native;
 import haxevx.vuex.core.IPayload;
 import haxevx.vuex.native.Vue.WatchOptions;
 import haxevx.vuex.native.Vuex.Module;
-import js.Promise;
+import js.lib.Promise;
 
 /**
  * Port of https://github.com/vuejs/vuex/tree/dev/types 
@@ -53,11 +53,7 @@ extern class Store<S>
 	  }): Void;
  
 
-	public function new(options:StoreOptions<S>) 
-	{
-		
-	}
-	
+	public function new(options:StoreOptions<S>);
 }
 
 @:native("Vuex") extern class Vuex

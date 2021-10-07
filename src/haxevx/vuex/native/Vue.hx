@@ -1,10 +1,10 @@
 package haxevx.vuex.native;
 import haxe.Constraints.Function;
-import js.Error;
+import js.lib.Error;
 import js.html.HtmlElement;
 import haxe.extern.Rest;
 import haxevx.vuex.native.Vue.FunctionalComponentOptions;
-import js.Promise;
+import js.lib.Promise;
 
 /**
  * Porting of https://github.com/vuejs/vue/tree/dev/types typescript definitions

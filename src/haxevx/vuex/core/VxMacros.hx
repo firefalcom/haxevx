@@ -898,7 +898,7 @@ class VxMacros
 	
 	
 	static  function getPropMetadata(metadata:Metadata, fldType:Type, fldPos:Position, p:Position):Expr {
-		var list:Array<{field:String, expr:Expr}> = [];
+		var list:Array<haxe.macro.ObjectField> = [];
 		
 		if (metadata != null) {
 			for (m in metadata) {
@@ -1293,10 +1293,7 @@ class VxMacros
 	
 }
 
-typedef FieldExprPair = {
-	var field:String;
-	var expr:Expr;
-}
+typedef FieldExprPair = haxe.macro.ObjectField;
 
 typedef PropBinding = {
 	var field:Field;
