@@ -921,7 +921,7 @@ class VxMacros
 		
 		if (typeStr != null ) {
 			
-			list.push({field:"type", expr:macro untyped __js__($v{typeStr}) });
+			list.push({field:"type", expr:macro untyped js.Syntax.code($v{typeStr}) });
 		}
 		
 		return  {expr:ExprDef.EObjectDecl(list), pos:p};
@@ -1063,7 +1063,7 @@ class VxMacros
 			var keyer:Expr = {expr:f.field, pos:f.keyPos};
 			if (f.strField != null) {
 				var strField:String = f.strField;
-				macro  haxevx.vuex.core.VxMacros.VxMacroUtil.dynamicSet(_m_, '$strField', ${val}); // _m_.awfawff =  ${val};    
+				macro  haxevx.vuex.core.VxMacros.VxMacroUtil.dynamicSet(_m_, $v{strField}, ${val}); // _m_.awfawff =  ${val};    
 			}
 			else macro  haxevx.vuex.core.VxMacros.VxMacroUtil.dynamicSet(_m_, ${keyer}, ${val}); // _m_.awfawff =  ${val};    
 		}];

@@ -32,7 +32,7 @@ class VComponent<D, P> extends VueBase
 	var _vData(get, null):D;
 	inline function get__vData():D 
 	{
-		return untyped __js__("this.$data");
+		return js.Syntax.code("this.$data");
 	}
 	
 	
